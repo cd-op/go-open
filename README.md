@@ -1,5 +1,11 @@
-This repository contains a single go module, containing a collection of
+This repository is a single go module, containing a collection of
 open-source go packages.
+
+To get the code use:
+
+```
+$ go get cdop.pt/go/open
+```
 
 Current packages in the collection:
 
