@@ -5,7 +5,7 @@
 package assertive
 
 import (
-	"io/ioutil"
+	"os"
 	"runtime"
 	"strings"
 )
@@ -58,7 +58,7 @@ func getLine(t miniT) string {
 	frames := runtime.CallersFrames(pc)
 	frame, _ := frames.Next()
 
-	text, err := ioutil.ReadFile(frame.File)
+	text, err := os.ReadFile(frame.File)
 	if err != nil {
 		// this cannot happen under normal circumstances
 		// frame.File is where the function corresponding

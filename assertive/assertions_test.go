@@ -22,6 +22,7 @@ func TestWantFailed(t *testing.T) {
 func TestWantSucceeded(t *testing.T) {
 	ft := &fakeT{logs: []string{}}
 
+	//lint:ignore SA4000 illustrates assertion use
 	Want(ft, 13 == 13)
 
 	Want(t, len(ft.logs) == 0)
@@ -41,6 +42,7 @@ func TestNeedFailed(t *testing.T) {
 func TestNeedSucceeded(t *testing.T) {
 	ft := &fakeT{logs: []string{}}
 
+	//lint:ignore SA4000 illustrates assertion use
 	Need(ft, 23 == 23)
 
 	Want(t, len(ft.logs) == 0)
