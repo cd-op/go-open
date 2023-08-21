@@ -11,3 +11,5 @@ Current packages in the collection:
 
 - **assertive**: assertion library with zero external dependencies providing
   two boolean assertions, for less verbose AAA type tests (as used in TDD).
+- **linedb**: OO-like interface for one-record-per-line databases backed by
+  simple plain-text files.
